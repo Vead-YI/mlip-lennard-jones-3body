@@ -31,7 +31,7 @@ This project demonstrates **3-body (angular) interactions** in machine learning 
 
 We construct a simplified 3-body potential:
 
-$$V_{\text{total}} = \sum_{i<j} V_{\text{LJ}}(r_{ij}) + \sum_{ijk} V_{\text{angle}}(\theta_{ijk})$$
+  $$V_{\text{total}} = \sum_{i<j} V_{\text{LJ}}(r_{ij}) + \sum_{ijk} V_{\text{angle}}(\theta_{ijk})$$
 
 where:
 
