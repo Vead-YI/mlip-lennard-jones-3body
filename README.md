@@ -31,15 +31,23 @@ This project demonstrates **3-body (angular) interactions** in machine learning 
 
 We construct a simplified 3-body potential:
 
-$$V_{\text{total}} = \sum_{i<j} V_{\text{LJ}}(r_{ij}) + \sum_{i,j,k} V_{\text{angle}}(\theta_{ijk})$$
+```
+V_total = Σ V_LJ(r_ij) + Σ V_angle(θ_ijk)
+```
 
 where:
 
 - **2-body term**: Standard Lennard-Jones potential
-  $$V_{\text{LJ}}(r) = 4\epsilon \left[ \left(\frac{\sigma}{r}\right)^{12} - \left(\frac{\sigma}{r}\right)^{6} \right]$$
+  
+  ```
+  V_LJ(r) = 4ε [(σ/r)^12 - (σ/r)^6]
+  ```
 
 - **3-body term**: Angular (bond-bending) potential
-  $$V_{\text{angle}}(\theta) = K (\cos\theta - \cos\theta_0)^2$$
+  
+  ```
+  V_angle(θ) = K (cos θ - cos θ₀)²
+  ```
 
 **Parameters:**
 - K = 0.5 ε (angular stiffness)
